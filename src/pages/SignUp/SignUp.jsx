@@ -65,7 +65,7 @@ const SignUp = () => {
                                 <input className="btn btn-primary" type="submit" value="Sign Up" />
                             </div>
                         </form>
-                        <h2>New cars doctors Account?
+                        <h2>Have an Already Account?
                             <Link className='text-orange-600' to='/login'>Login</Link>
                             <Social></Social>
                         </h2>

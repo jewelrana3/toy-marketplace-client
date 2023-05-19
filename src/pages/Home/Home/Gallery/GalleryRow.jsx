@@ -12,7 +12,7 @@ const GalleryRow = ({ gallery }) => {
                 <p>{rating}</p>
                 <div className="card-actions justify-end">
                     <Link to={`/details/${_id}`}>
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn btn-primary">Book</button>
                     </Link>
                 </div>
             </div>
