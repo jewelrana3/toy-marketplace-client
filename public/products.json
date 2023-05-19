@@ -1,0 +1,39 @@
+[
+    {
+      "name": "bayb cuite",
+      "price": 29.99,
+      "photo_url": "https://i.ibb.co/N30nfTT/g-5.jpg",
+      "rating": 4.2
+    },
+    {
+      "name": "Aalilyanna",
+      "price": 14.99,
+      "photo_url": "https://i.ibb.co/8gBvGrj/g-4.jpg",
+      "rating": 3.8
+    },
+    {
+      "name": "Abstinence",
+      "price": 39.99,
+      "photo_url": "https://i.ibb.co/1ZBNxcf/g-1.jpg",
+      "rating": 4.5
+    },
+    {
+      "name": "Mertances",
+      "price": 9.99,
+      "photo_url": "https://i.ibb.co/8gBvGrj/g-4.jpg",
+      "rating": 3.2
+    },
+    {
+      "name": "Aalia",
+      "price": 49.99,
+      "photo_url": "https://i.ibb.co/qgj5zZP/g-3.jpg",
+      "rating": 4.7
+    },
+    {
+      "name": "Abercrombie",
+      "price": 19.99,
+      "photo_url": "https://i.ibb.co/BttPvFx/g-2.jpg",
+      "rating": 4.0
+    }
+  ]
+  
