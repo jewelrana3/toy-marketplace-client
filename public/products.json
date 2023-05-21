@@ -1,36 +1,43 @@
 [
     {
-      "name": "bayb cuite",
+      "title": "bayb cuite",
+      "service_id":"01",
       "price": 29.99,
       "photo_url": "https://i.ibb.co/N30nfTT/g-5.jpg",
       "rating": 4.2
     },
     {
-      "name": "Aalilyanna",
+      "title": "Aalilyanna",
+      "service_id":"02",
       "price": 14.99,
       "photo_url": "https://i.ibb.co/8gBvGrj/g-4.jpg",
       "rating": 3.8
     },
     {
-      "name": "Abstinence",
+      "title": "Abstinence",
+      "service_id":"03",
       "price": 39.99,
       "photo_url": "https://i.ibb.co/1ZBNxcf/g-1.jpg",
       "rating": 4.5
     },
     {
-      "name": "Mertances",
+      "title": "Mertances",
+      "service_id":"04",
       "price": 9.99,
       "photo_url": "https://i.ibb.co/8gBvGrj/g-4.jpg",
       "rating": 3.2
     },
     {
-      "name": "Aalia",
+      "title": "Aalia",
+      "service_id":"05",
       "price": 49.99,
       "photo_url": "https://i.ibb.co/qgj5zZP/g-3.jpg",
       "rating": 4.7
     },
     {
-      "name": "Abercrombie",
+    
+      "title": "Abercrombie",
+      "service_id":"06",
       "price": 19.99,
       "photo_url": "https://i.ibb.co/BttPvFx/g-2.jpg",
       "rating": 4.0

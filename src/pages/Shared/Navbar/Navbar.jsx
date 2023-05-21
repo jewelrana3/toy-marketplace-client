@@ -16,7 +16,7 @@ const Navbar = () => {
         <li><Link>Home</Link></li>
         <li><Link>All My Toys</Link></li>
         <li><Link>My Toy</Link></li>
-        <li><Link>Add A Toys</Link></li>
+       {/* { user?.email ?<li className="mr-4" ><Link to='/bookings'>Add A Toys</Link></li>:""} */}
         <li><Link>Blog</Link></li>
 
     </>
@@ -36,13 +36,16 @@ const Navbar = () => {
                     <h3>Baby Toys</h3>
                 </Link>
             </div>
-            <div className=" hidden lg:flex" style={{marginRight:-250}}>
+            <div className=" hidden lg:flex" style={{marginRight:-150}}>
                 <ul className="menu menu-horizontal">
                 {navItems}
             </ul>
             </div>
             <div className="navbar-end">
-                {user ? <button className="btn btn-info" onClick={handleLogOut}>Log Out</button>
+                {user ?.email ? <>
+                    <li className="mr-4" style={{listStyleType:"none"}}><Link to='/bookings'>Add A Toys</Link></li>
+                    <button className="btn btn-info" onClick={handleLogOut}>Log Out</button>
+                </>
                     : <Link to='/login'><button className="btn btn-success">Login</button></Link>}
             </div>
         </div>

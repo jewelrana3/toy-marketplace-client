@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
 
 
 const DetailsPag = () => {
     const details = useLoaderData()
+    const {user} = useContext(AuthContext)
+    const {photo_url,_id,title,price} = details;
 
     const handleBookDetails=(event)=>{
         event.preventDefault();
@@ -10,10 +14,18 @@ const DetailsPag = () => {
         const name= form.name.value;
         const email = form.email.value;
         const date = form.date.value;
-        const photo = form.photo.value;
+        // const photo = form.photo.value;
 
         const details = {
-            name,email,date,photo,
+            name,
+            email,
+            date,
+            photo_url,
+            service:title,
+            service_id:_id,
+            price:price
+           
+           
         }
         console.log(details)
 
@@ -28,30 +40,30 @@ const DetailsPag = () => {
         .then(data=>{
             console.log(data)
         })
-    }
+ }
     return (
         <div>
-            <h2>Book now baby:{details.name}</h2>
+            <h2>Book now baby:{title}</h2>
             <form onSubmit={handleBookDetails}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
-                        <input type="text" name='name' placeholder="name" className="input input-bordered" />
+                        <input type="text" defaultValue={user?.name} name='name' placeholder="name" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="text" name='email' placeholder="email" className="input input-bordered" />
+                        <input type="text" name='email' defaultValue={user?.email} placeholder="email" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Photo URL</span>
                         </label>
-                        <input type="text" name='photo' placeholder="photo URL" className="input input-bordered" />
+                        <input type="text" defaultValue={photo_url} name='photo' placeholder="photo URL" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">

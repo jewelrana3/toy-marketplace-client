@@ -5,6 +5,10 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import DetailsPag from "../pages/DetailsPag/DetailsPag";
 
+import Booking from "../pages/Booking/Booking";
+import PrivateRoute from "./PrivateRoute";
+
+
 const router = createBrowserRouter([
     {
       path: "/",
@@ -25,7 +29,11 @@ const router = createBrowserRouter([
         ,{
           path:'details/:id',
           element:<DetailsPag></DetailsPag>,
-          loader:({params}) => fetch(`http://localhost:4000/allData/${params.id}`)
+          loader:({params}) => fetch(`http://localhost:4000/child/${params.id}`)
+        },
+        {
+          path:'bookings',
+          element:<PrivateRoute><Booking></Booking></PrivateRoute>
         }
       ]
     },
