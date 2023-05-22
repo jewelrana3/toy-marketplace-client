@@ -7,6 +7,9 @@ import DetailsPag from "../pages/DetailsPag/DetailsPag";
 
 import Booking from "../pages/Booking/Booking";
 import PrivateRoute from "./PrivateRoute";
+import UpdateMyToy from "../pages/UpdateMyToy/UpdateMyToy";
+import Blog from "../pages/Blog/Blog";
+// import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
@@ -25,15 +28,28 @@ const router = createBrowserRouter([
         {
           path:'signup',
           element:<SignUp></SignUp>
+        },
+        {
+          path:'mytoy',
+          element:<UpdateMyToy></UpdateMyToy>,
+          loader:() => fetch("http://localhost:4000/alltoys")
         }
         ,{
           path:'details/:id',
-          element:<DetailsPag></DetailsPag>,
+          element:<PrivateRoute><DetailsPag></DetailsPag></PrivateRoute>,
           loader:({params}) => fetch(`http://localhost:4000/child/${params.id}`)
         },
         {
-          path:'bookings',
+          path:'alltoys',
           element:<PrivateRoute><Booking></Booking></PrivateRoute>
+        },
+        // {
+        //   path:'*',
+        //   element:<ErrorPage></ErrorPage>
+        // },
+        {
+          path:'blog',
+          element:<Blog></Blog>
         }
       ]
     },

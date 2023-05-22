@@ -15,8 +15,8 @@ const Social = () => {
         <div>
         <div className="divider">OR</div>
         <div className="text-center">
-            <button onClick={handleGoogleLogin} className="btn btn-circle btn-outline ">
-                G
+            <button onClick={handleGoogleLogin} className="btn btn-outline ">
+                Google Sign In
             </button>
         </div>
     </div>

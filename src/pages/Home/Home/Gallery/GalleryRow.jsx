@@ -11,7 +11,7 @@ const GalleryRow = ({ gallery }) => {
             </figure>
             <div className="card-body ">
                 <h2 className="card-title">{title}</h2>
-                <p>Price:${price}</p>
+                <p className="font-bold text-red-300">Price:${price}</p>
                 <div className="card-actions">
                    <Link to={`/details/${_id}`}> <button className="btn btn-primary">Book Now</button></Link>
                 </div>

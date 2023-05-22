@@ -1,7 +1,9 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
-// import logo from '../../../assets/logo.svg'
+import logo from '../../../assets/g-4.jpg'
+import './Navbar.css'
+import ActiveLink from "../../ActiveLink/ActiveLink";
 
 
 const Navbar = () => {
@@ -13,16 +15,24 @@ const Navbar = () => {
             .catch(error => console.log(error))
     }
     const navItems = <>
-        <li><Link>Home</Link></li>
-        <li><Link>All My Toys</Link></li>
-        <li><Link>My Toy</Link></li>
-       {/* { user?.email ?<li className="mr-4" ><Link to='/bookings'>Add A Toys</Link></li>:""} */}
-        <li><Link>Blog</Link></li>
+
+        <li><ActiveLink to='/'>Home</ActiveLink></li>
+        <li><ActiveLink to='/blog'>Blog</ActiveLink></li>
+
+        {user?.email ? <>
+
+            <li ><ActiveLink to='/mytoy'>My Toy</ActiveLink></li>
+            <li ><ActiveLink to='/alltoys'>Add A Toys</ActiveLink></li>
+            <li ><ActiveLink to='/alltoys'>All My Toys</ActiveLink></li>
+            <li><button onClick={handleLogOut}>Log Out</button></li>
+        </>
+            : <li><Link to='/login'><button>Login</button></Link></li>}
+
 
     </>
 
     return (
-        <div className="navbar bg-base-100 h-28 mb-4">
+        <div className="navbar  h-28 mb-4 bg-slate-600">
             <div className="navbar">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -33,20 +43,18 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to='/' className="btn btn-ghost normal-case text-xl">
-                    <h3>Baby Toys</h3>
+                    <h3 className="text-white">Baby Toys</h3>
                 </Link>
             </div>
-            <div className=" hidden lg:flex" style={{marginRight:-150}}>
+            <div className=" hidden lg:flex" >
                 <ul className="menu menu-horizontal">
-                {navItems}
-            </ul>
+                    {navItems}
+                </ul>
             </div>
             <div className="navbar-end">
-                {user ?.email ? <>
-                    <li className="mr-4" style={{listStyleType:"none"}}><Link to='/bookings'>Add A Toys</Link></li>
-                    <button className="btn btn-info" onClick={handleLogOut}>Log Out</button>
-                </>
-                    : <Link to='/login'><button className="btn btn-success">Login</button></Link>}
+                <div className="w-12 rounded-full">
+                   {user?.email ? <img className="w-12 rounded-full" title="Baby care full" src={logo} /> :''}
+                </div>
             </div>
         </div>
     );

@@ -7,17 +7,17 @@ const Booking = () => {
     const {user} = useContext(AuthContext)
     const [books,setBooks] = useState([])
 
-   const url = `http://localhost:4000/bookings?email=${user?.email}`
+   const url = `http://localhost:4000/alltoys`
    useEffect(()=>{
     fetch(url)
     .then(res =>res.json())
     .then(data =>setBooks(data))
-   },[]);
+   },[url]);
 
    const handleDelete=id=>{
     const prossed = confirm('Are you sure delete confrim')
     if(prossed){
-        fetch(`http://localhost:4000/bookings/${id}`,{
+        fetch(`http://localhost:4000/alltoys/${id}`,{
             method:'DELETE'
         })
         .then(res=>res.json())
@@ -31,7 +31,7 @@ const Booking = () => {
 } 
 
 const handleConfrim=id=>{
-    fetch(`http://localhost:4000/bookings/${id}`,{
+    fetch(`http://localhost:4000/alltoys/${id}`,{
         method:'PATCH',
         headers:{
             'content-type':'application/json'
@@ -50,6 +50,8 @@ const handleConfrim=id=>{
         }
     })
 }
+
+
     return (
         <div>
             <h2 className="text-3xl">bookings:{books.length}</h2>
@@ -58,16 +60,15 @@ const handleConfrim=id=>{
                     {/* head */}
                     <thead>
                         <tr>
-                            <th>
-                                <label>
-                                    <input type="checkbox" className="checkbox" />
-                                </label>
-                            </th>
-                            <th>Image</th>
-                            <th>Service</th>
-                            <th>Date</th>
+                           
+                            <th>Toy Name</th>
+                            {/* <th>Service</th> */}
+                            {/* <th>Date</th> */}
+                            <th>Quantity</th>
+                            <th>Sub_Catacogy</th>
                             <th>Price</th>
                             <th>Status</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
