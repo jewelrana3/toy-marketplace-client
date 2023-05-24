@@ -33,7 +33,7 @@ const DetailsPag = () => {
         }
         console.log(details)
 
-        fetch('http://localhost:4000/alltoys',{
+        fetch('https://server-assignment-11-jlaeos6ed-jewelrana3.vercel.app/alltoys',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

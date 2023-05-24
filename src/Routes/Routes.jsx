@@ -9,7 +9,7 @@ import Booking from "../pages/Booking/Booking";
 import PrivateRoute from "./PrivateRoute";
 import UpdateMyToy from "../pages/UpdateMyToy/UpdateMyToy";
 import Blog from "../pages/Blog/Blog";
-// import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
@@ -32,21 +32,21 @@ const router = createBrowserRouter([
         {
           path:'mytoy',
           element:<UpdateMyToy></UpdateMyToy>,
-          loader:() => fetch("http://localhost:4000/alltoys")
+          loader:() => fetch("https://server-assignment-11-jlaeos6ed-jewelrana3.vercel.app/alltoys")
         }
         ,{
           path:'details/:id',
           element:<PrivateRoute><DetailsPag></DetailsPag></PrivateRoute>,
-          loader:({params}) => fetch(`http://localhost:4000/child/${params.id}`)
+          loader:({params}) => fetch(`https://server-assignment-11-jlaeos6ed-jewelrana3.vercel.app/child/${params.id}`)
         },
         {
           path:'alltoys',
           element:<PrivateRoute><Booking></Booking></PrivateRoute>
         },
-        // {
-        //   path:'*',
-        //   element:<ErrorPage></ErrorPage>
-        // },
+        {
+          path:'*',
+          element:<ErrorPage>Not</ErrorPage>
+        },
         {
           path:'blog',
           element:<Blog></Blog>

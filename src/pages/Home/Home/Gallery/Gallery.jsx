@@ -6,7 +6,7 @@ const Gallery = () => {
     const [gallerys, setGallerys] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:4000/child')
+        fetch('https://server-assignment-11-jlaeos6ed-jewelrana3.vercel.app/child')
             .then(res => res.json())
             .then(data => setGallerys(data))
     }, [])

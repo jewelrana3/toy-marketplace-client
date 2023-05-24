@@ -7,7 +7,7 @@ const Booking = () => {
     const {user} = useContext(AuthContext)
     const [books,setBooks] = useState([])
 
-   const url = `http://localhost:4000/alltoys`
+   const url = `https://server-assignment-11-jlaeos6ed-jewelrana3.vercel.app/alltoys`
    useEffect(()=>{
     fetch(url)
     .then(res =>res.json())
@@ -17,7 +17,7 @@ const Booking = () => {
    const handleDelete=id=>{
     const prossed = confirm('Are you sure delete confrim')
     if(prossed){
-        fetch(`http://localhost:4000/alltoys/${id}`,{
+        fetch(`https://server-assignment-11-jlaeos6ed-jewelrana3.vercel.app/alltoys/${id}`,{
             method:'DELETE'
         })
         .then(res=>res.json())
@@ -31,7 +31,7 @@ const Booking = () => {
 } 
 
 const handleConfrim=id=>{
-    fetch(`http://localhost:4000/alltoys/${id}`,{
+    fetch(`https://server-assignment-11-jlaeos6ed-jewelrana3.vercel.app/alltoys/${id}`,{
         method:'PATCH',
         headers:{
             'content-type':'application/json'
