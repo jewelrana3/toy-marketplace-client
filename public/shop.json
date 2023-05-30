@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "name": "Mathematics Textbook",
+      "category": "Math",
+      "image": "math_textbook.jpg",
+      "price": 29.99
+    },
+    {
+      "id": 2,
+      "name": "Chemistry Set",
+      "category": "Science",
+      "image": "chemistry_set.jpg",
+      "price": 49.99
+    },
+    {
+      "id": 3,
+      "name": "Physics Lab Kit",
+      "category": "Science",
+      "image": "physics_lab_kit.jpg",
+      "price": 79.99
+    },
+    {
+      "id": 4,
+      "name": "Geometry Compass",
+      "category": "Math",
+      "image": "geometry_compass.jpg",
+      "price": 9.99
+    },
+    {
+      "id": 5,
+      "name": "Biology Textbook",
+      "category": "Science",
+      "image": "biology_textbook.jpg",
+      "price": 39.99
+    },
+    {
+      "id": 6,
+      "name": "Microscope",
+      "category": "Science",
+      "image": "microscope.jpg",
+      "price": 129.99
+    },
+    {
+      "id": 7,
+      "name": "Algebra Workbook",
+      "category": "Math",
+      "image": "algebra_workbook.jpg",
+      "price": 19.99
+    },
+    {
+      "id": 8,
+      "name": "Periodic Table Poster",
+      "category": "Science",
+      "image": "periodic_table_poster.jpg",
+      "price": 14.99
+    },
+    {
+      "id": 9,
+      "name": "Calculator",
+      "category": "Math",
+      "image": "calculator.jpg",
+      "price": 24.99
+    },
+    {
+      "id": 10,
+      "name": "Chemical Glassware Set",
+      "category": "Science",
+      "image": "chemical_glassware_set.jpg",
+      "price": 89.99
+    },
+    {
+      "id": 11,
+      "name": "Geometry Ruler",
+      "category": "Math",
+      "image": "geometry_ruler.jpg",
+      "price": 7.99
+    },
+    {
+      "id": 12,
+      "name": "Astronomy Book",
+      "category": "Science",
+      "image": "astronomy_book.jpg",
+      "price": 34.99
+    },
+    {
+      "id": 13,
+      "name": "Math Flashcards",
+      "category": "Math",
+      "image": "math_flashcards.jpg",
+      "price": 12.99
+    },
+    {
+      "id": 14,
+      "name": "Botany Guide",
+      "category": "Science",
+      "image": "botany_guide.jpg",
+      "price": 27.99
+    },
+    {
+      "id": 15,
+      "name": "Graphing Calculator",
+      "category": "Math",
+      "image": "graphing_calculator.jpg",
+      "price": 89.99
+    },
+    {
+      "id": 16,
+      "name": "Science Experiment Kit",
+      "category": "Science",
+      "image": "graphing_calculator.jpg",
+      "price": 89.99
+    } 
+
+]
