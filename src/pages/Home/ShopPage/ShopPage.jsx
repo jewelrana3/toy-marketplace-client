@@ -1,17 +1,20 @@
+import useShop from "../../../hooks/useShop";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import ShopTab from "./ShopTab";
+
 
 const ShopPage = () => {
+    const [shop] = useShop();
 
-    // const math = menu.filter(item => item.category === 'dessert')
- 
-    // const science = menu.filter(item => item.category === 'pizza')
-    // const languses = menu.filter(item => item.category === 'salad')
-    // const engineer = menu.filter(item => item.category === 'soup')
+    const math = shop.filter(item => item.category === 'Math')
+    const science = shop.filter(item => item.category === 'Science')
+    const languses = shop.filter(item => item.category === 'Languses')
+    const engineer = shop.filter(item => item.category === 'Engineer')
     return (
         <div className="text-center">
             <h2 className="text-5xl ">Shop By Category</h2>
-            <p className="mt-5">Welcome to our Educational Toy Shop: Explore and Learn!</p>
+            <p className="mt-5 mb-10">Welcome to our Educational Toy Shop: Explore and Learn!!</p>
             <Tabs>
                 <TabList >
                     <Tab >Math Toys</Tab>
@@ -21,16 +24,16 @@ const ShopPage = () => {
                 </TabList>
 
                 <TabPanel>
-                    <h2>Any content 1</h2>
+                    <ShopTab items={math}></ShopTab>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 2</h2>
+                    <ShopTab items={science}></ShopTab>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 1</h2>
+                    <ShopTab items={languses}></ShopTab>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 2</h2>
+                    <ShopTab items={engineer}></ShopTab>
                 </TabPanel>
             </Tabs>
         </div>

@@ -7,6 +7,7 @@ import Home from "../pages/Home/Home/Home";
 import AddBrainToy from "../components/AddBrainToy/AddBrainToy";
 import AllToy from "../components/AllToy/AllToy";
 import Blog from "../components/Blog/Blog";
+import Details from "../components/AllToy/Details";
 
   const router = createBrowserRouter([
     {
@@ -29,6 +30,11 @@ import Blog from "../components/Blog/Blog";
         },{
           path:'blog',
           element:<Blog></Blog>
+        },
+        {
+          path:'details',
+          element:<Details></Details>,
+          loader:()=>fetch('http://localhost:4000/addtoy')
         }
       ]
     },

@@ -3,113 +3,129 @@
       "id": 1,
       "name": "Mathematics Textbook",
       "category": "Math",
-      "image": "math_textbook.jpg",
-      "price": 29.99
+      "image": "https://i.ibb.co/sPh7XfN/513n-PLCLGQS.jpg",
+      "price": 29.99,
+      "rating":9.8
     },
     {
       "id": 2,
       "name": "Chemistry Set",
       "category": "Science",
-      "image": "chemistry_set.jpg",
-      "price": 49.99
+      "image": "https://i.ibb.co/Bq4Vrmq/photo-1484820540004-14229fe36ca4-005.jpg",
+      "price": 49.99,
+      "rating":4.8
     },
     {
       "id": 3,
       "name": "Physics Lab Kit",
-      "category": "Science",
-      "image": "physics_lab_kit.jpg",
-      "price": 79.99
+      "category": "",
+      "image": "https://i.ibb.co/Vqkxcjj/Educational-Toys-For-5-Year-Olds-scaled.jpg",
+      "price": 79.99,
+      "rating":6.8
     },
     {
       "id": 4,
       "name": "Geometry Compass",
       "category": "Math",
-      "image": "geometry_compass.jpg",
-      "price": 9.99
+      "image": "https://i.ibb.co/6wJPp5W/81-Ay-Jgb-Jg-FL-AC-SL1500.jpg",
+      "price": 9.99,
+      "rating":3.8
     },
     {
       "id": 5,
       "name": "Biology Textbook",
-      "category": "Science",
-      "image": "biology_textbook.jpg",
-      "price": 39.99
+      "category": "",
+      "image": "https://i.ibb.co/sFj2Ksf/premium-photo-1682751161503-170d2ac81b2f.jpg",
+      "price": 39.99,
+      "rating":5.8
     },
     {
       "id": 6,
       "name": "Microscope",
-      "category": "Science",
-      "image": "microscope.jpg",
-      "price": 129.99
+      "category": "Engineer",
+      "image": "https://i.ibb.co/Kzs2wdk/math-toys-for-preschoolers-0.jpg",
+      "price": 129.99,
+      "rating":4.8
     },
     {
       "id": 7,
       "name": "Algebra Workbook",
       "category": "Math",
-      "image": "algebra_workbook.jpg",
-      "price": 19.99
+      "image": "https://i.ibb.co/vQLdhRr/816-64-F-4z-S-AC-SX679.jpg",
+      "price": 19.99,
+      "rating":7.8
     },
     {
       "id": 8,
       "name": "Periodic Table Poster",
       "category": "Science",
-      "image": "periodic_table_poster.jpg",
-      "price": 14.99
+      "image": "https://i.ibb.co/Wz7bGwQ/Ha236d99320dc4bab923b2e8b2938200cg.jpg",
+      "price": 14.99,
+      "rating":4.3
     },
     {
       "id": 9,
       "name": "Calculator",
-      "category": "Math",
-      "image": "calculator.jpg",
-      "price": 24.99
+      "category": "Engineer",
+      "image": "https://i.ibb.co/Wz7bGwQ/Ha236d99320dc4bab923b2e8b2938200cg.jpg",
+      "price": 24.99,
+      "rating":4.2
     },
     {
       "id": 10,
       "name": "Chemical Glassware Set",
       "category": "Science",
-      "image": "chemical_glassware_set.jpg",
-      "price": 89.99
+      "image": "https://i.ibb.co/82T3Y9y/s-l1600.jpg",
+      "price": 89.99,
+      "rating":5.8
     },
     {
       "id": 11,
       "name": "Geometry Ruler",
-      "category": "Math",
-      "image": "geometry_ruler.jpg",
-      "price": 7.99
+      "category": "Engineer",
+      "image": "https://i.ibb.co/3hMXvTR/8797f5fc-db17-4b26-b634-6d091542d18e-56d13e8a54a60fe47d6acc.webp",
+      "price": 7.99,
+      "rating":6.8
     },
     {
       "id": 12,
       "name": "Astronomy Book",
       "category": "Science",
-      "image": "astronomy_book.jpg",
-      "price": 34.99
+      "image": "https://i.ibb.co/16WBW2M/Fisher-Price-Linkimals-Counting-Koala.webp",
+      "price": 34.99,
+      "rating":4.0
     },
     {
       "id": 13,
       "name": "Math Flashcards",
-      "category": "Math",
-      "image": "math_flashcards.jpg",
-      "price": 12.99
+      "category": "Engineer",
+      "image": "https://i.ibb.co/6Zzkqz4/KSL732372-mp4.jpg",
+      "price": 12.99,
+      "rating":9.8
     },
     {
       "id": 14,
-      "name": "Botany Guide",
-      "category": "Science",
+      "name": "DIPDEY Card",
+      "category": "DIPDEY Card",
       "image": "botany_guide.jpg",
-      "price": 27.99
+      "price": 27.99,
+      "rating":4.2
     },
     {
       "id": 15,
-      "name": "Graphing Calculator",
-      "category": "Math",
-      "image": "graphing_calculator.jpg",
-      "price": 89.99
+      "name": "ZeenKind",
+      "category": "Languses",
+      "image": "https://i.ibb.co/MGknTGK/71-NJh6cb-I1-L-AC-SX679.jpg",
+      "price": 89.99,
+      "rating":4.9
     },
     {
       "id": 16,
-      "name": "Science Experiment Kit",
-      "category": "Science",
-      "image": "graphing_calculator.jpg",
-      "price": 89.99
+      "name": "Teach Word Book",
+      "category": "Languses",
+      "image": "https://i.ibb.co/WBg7f5F/touch-and-teach-word-book-74b3fc685a064023a99e1fbc7d0229fe.webp",
+      "price": 89.99,
+      "rating":4.8
     } 
 
 ]
