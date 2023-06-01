@@ -21,7 +21,7 @@ const AddBrainToy = () => {
         ,sellername,description }
         console.log(newItem)
 
-        fetch('http://localhost:4000/addtoy',{
+        fetch('http://localhost:4000/allToy',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

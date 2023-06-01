@@ -8,6 +8,8 @@ import AddBrainToy from "../components/AddBrainToy/AddBrainToy";
 import AllToy from "../components/AllToy/AllToy";
 import Blog from "../components/Blog/Blog";
 import Details from "../components/AllToy/Details";
+import Mytoy from "../components/Mytoy/Mytoy";
+// import DetailsRoute from "../Layout/DetailsRoute";
 
   const router = createBrowserRouter([
     {
@@ -26,18 +28,36 @@ import Details from "../components/AllToy/Details";
         {
           path:'alltoy',
           element:<AllToy></AllToy>,
-          loader:()=>fetch('http://localhost:4000/addtoy')
-        },{
+          loader:()=>fetch('http://localhost:4000/allToy')
+        },
+        {
+          path:'mytoy',
+          element:<Mytoy></Mytoy>,
+          // loader:({params})=>fetch(`http://localhost:4000/allToy/${params.email}`)
+        },
+        {
+          path:'details/:id',
+          element:<Details></Details>,
+          loader:({params})=>fetch(`http://localhost:4000/allToy/${params.id}`)
+        },
+        {
           path:'blog',
           element:<Blog></Blog>
         },
-        {
-          path:'details',
-          element:<Details></Details>,
-          loader:()=>fetch('http://localhost:4000/addtoy')
-        }
+       
       ]
     },
+    // {
+    //   path:'details',
+    //   element:<DetailsRoute></DetailsRoute>,
+    //   children:[
+    //     {
+    //       path:'details/:id',
+    //       element:<Details></Details>,
+    //       loader:({params})=>fetch(`http://localhost:4000/addtoy/${params.id}`)
+    //     }
+    //   ]
+    // }
   ]);
 
   export default router;

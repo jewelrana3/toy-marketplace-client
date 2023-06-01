@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 const useShop = () => {
     const [shop,setShop] = useState([])
     useEffect(()=>{
-        fetch('/shop.json')
+        fetch('http://localhost:4000/alltoy')
         .then(res=>res.json())
         .then(data=>{
             setShop(data)
+            console.log(data)
         })
     },[])
     return [shop]

@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+    
       "name": "Mathematics Textbook",
       "category": "Math",
       "image": "https://i.ibb.co/sPh7XfN/513n-PLCLGQS.jpg",
@@ -8,7 +8,7 @@
       "rating":9.8
     },
     {
-      "id": 2,
+     
       "name": "Chemistry Set",
       "category": "Science",
       "image": "https://i.ibb.co/Bq4Vrmq/photo-1484820540004-14229fe36ca4-005.jpg",
@@ -16,7 +16,7 @@
       "rating":4.8
     },
     {
-      "id": 3,
+      
       "name": "Physics Lab Kit",
       "category": "",
       "image": "https://i.ibb.co/Vqkxcjj/Educational-Toys-For-5-Year-Olds-scaled.jpg",
@@ -24,7 +24,7 @@
       "rating":6.8
     },
     {
-      "id": 4,
+      
       "name": "Geometry Compass",
       "category": "Math",
       "image": "https://i.ibb.co/6wJPp5W/81-Ay-Jgb-Jg-FL-AC-SL1500.jpg",
@@ -32,7 +32,7 @@
       "rating":3.8
     },
     {
-      "id": 5,
+     
       "name": "Biology Textbook",
       "category": "",
       "image": "https://i.ibb.co/sFj2Ksf/premium-photo-1682751161503-170d2ac81b2f.jpg",
@@ -40,7 +40,7 @@
       "rating":5.8
     },
     {
-      "id": 6,
+     
       "name": "Microscope",
       "category": "Engineer",
       "image": "https://i.ibb.co/Kzs2wdk/math-toys-for-preschoolers-0.jpg",
@@ -48,7 +48,7 @@
       "rating":4.8
     },
     {
-      "id": 7,
+     
       "name": "Algebra Workbook",
       "category": "Math",
       "image": "https://i.ibb.co/vQLdhRr/816-64-F-4z-S-AC-SX679.jpg",
@@ -56,7 +56,7 @@
       "rating":7.8
     },
     {
-      "id": 8,
+     
       "name": "Periodic Table Poster",
       "category": "Science",
       "image": "https://i.ibb.co/Wz7bGwQ/Ha236d99320dc4bab923b2e8b2938200cg.jpg",
@@ -64,7 +64,7 @@
       "rating":4.3
     },
     {
-      "id": 9,
+     
       "name": "Calculator",
       "category": "Engineer",
       "image": "https://i.ibb.co/Wz7bGwQ/Ha236d99320dc4bab923b2e8b2938200cg.jpg",
@@ -72,7 +72,7 @@
       "rating":4.2
     },
     {
-      "id": 10,
+     
       "name": "Chemical Glassware Set",
       "category": "Science",
       "image": "https://i.ibb.co/82T3Y9y/s-l1600.jpg",
@@ -80,7 +80,7 @@
       "rating":5.8
     },
     {
-      "id": 11,
+     
       "name": "Geometry Ruler",
       "category": "Engineer",
       "image": "https://i.ibb.co/3hMXvTR/8797f5fc-db17-4b26-b634-6d091542d18e-56d13e8a54a60fe47d6acc.webp",
@@ -88,7 +88,7 @@
       "rating":6.8
     },
     {
-      "id": 12,
+     
       "name": "Astronomy Book",
       "category": "Science",
       "image": "https://i.ibb.co/16WBW2M/Fisher-Price-Linkimals-Counting-Koala.webp",
@@ -96,7 +96,7 @@
       "rating":4.0
     },
     {
-      "id": 13,
+     
       "name": "Math Flashcards",
       "category": "Engineer",
       "image": "https://i.ibb.co/6Zzkqz4/KSL732372-mp4.jpg",
@@ -104,7 +104,7 @@
       "rating":9.8
     },
     {
-      "id": 14,
+     
       "name": "DIPDEY Card",
       "category": "DIPDEY Card",
       "image": "botany_guide.jpg",
@@ -112,7 +112,7 @@
       "rating":4.2
     },
     {
-      "id": 15,
+     
       "name": "ZeenKind",
       "category": "Languses",
       "image": "https://i.ibb.co/MGknTGK/71-NJh6cb-I1-L-AC-SX679.jpg",
@@ -120,7 +120,7 @@
       "rating":4.9
     },
     {
-      "id": 16,
+     
       "name": "Teach Word Book",
       "category": "Languses",
       "image": "https://i.ibb.co/WBg7f5F/touch-and-teach-word-book-74b3fc685a064023a99e1fbc7d0229fe.webp",
