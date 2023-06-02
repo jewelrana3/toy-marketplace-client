@@ -1,5 +1,6 @@
 // import ShopGallery from "../../../components/ShopGallery/ShopGallery";
 import Banner from "../Banner/Banner";
+import OurClient from "../OurClient/OurClient";
 import ShopPage from "../ShopPage/ShopPage";
 
 // import ShopPage from "../ShopPage/ShopPage";
@@ -14,7 +15,7 @@ const Home = () => {
            <ShowPage></ShowPage>
            <ToyGallery></ToyGallery>
            <ShopPage></ShopPage>
-           {/* <ShopGallery></ShopGallery> */}
+            <OurClient></OurClient>
         </div>
     );
 };

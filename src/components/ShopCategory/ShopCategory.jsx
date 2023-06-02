@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 
 
 const ShopCategory = ({item}) => {
-    const {_id,name,price,rating,image} = item;
+    console.log(item)
+    const {_id,name,price,rating,picture} = item;
     return (
         <div className="card w-96 bg-base-100 shadow-xl my-10">
-            <figure><img src={image} alt="Shoes" /></figure>
+            <figure><img src={picture} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
                 <p className="text-left font-semibold">Price:${price}</p>

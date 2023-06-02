@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navItem a.active {
+    background-color: rgb(205, 91, 30);
+    
+  }
+
+  /* .navItem a.active {
+    background-color: transparent;
+  }
+ */
+

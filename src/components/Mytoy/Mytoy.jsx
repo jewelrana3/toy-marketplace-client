@@ -1,28 +1,49 @@
 // import { useLoaderData } from "react-router-dom";
 // import useShop from "../../hooks/useShop";
-import { useEffect, useState } from "react";
-
+import { createContext, useEffect, useState } from "react";
+import { AuthContext } from '../../provider/AuthProvider';
+import MytoyTab from "./MytoyTab";
 
 const Mytoy = () => {
-    const [mytoy,setMytoy] = useState([])
-    
-    useEffect(()=>{
-        fetch('http://localhost:4000/alltoy')
-        .then(res=>res.json())
-        .then(data=>{
-            setMytoy(data)
-            console.log(data)
-        })
-    },[])
+    const [mytoy, setMytoy] = useState([])
+    const { user } = createContext(AuthContext)
+ 
+    const uri = `http://localhost:4000/alltoy?email=${user?.email}`
+    useEffect(() => {
+        fetch(uri)
+            .then(res => res.json())
+            .then(data => {
+                setMytoy(data)
+                console.log(data)
+            })
+    }, [])
     return (
-        <div className="pt-20">
-           <div>
-            {
-                mytoy.map(item=><li
-                key={item._id}
-                ><h2>Price:{item.price}</h2></li>)
-            }
-           </div>
+        <div className="p-20">
+            <h2>Lenght:{mytoy.length}</h2>
+            <div className="overflow-x-auto w-full">
+                <table className="table w-full">
+
+                    <thead>
+                        <tr>
+                            <th>Remove itm</th>
+                            <th>Name & Category</th>
+                            <th>Name & Category</th>
+                            <th>User email</th>
+                            <th>Upddate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            mytoy.map(toy => <MytoyTab
+                                key={toy._id}
+                                toy={toy}
+                                mytoy={mytoy}
+                                setMyToy={setMytoy}
+                            ></MytoyTab>)
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 };

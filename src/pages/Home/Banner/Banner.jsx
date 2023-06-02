@@ -31,10 +31,14 @@ const Banner = () => {
                     <img className="w-full" src={img1} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img className="w-full" src={img2} alt="" />
+                    <div>
+                    
+                    <img  className="w-full" src={img2} alt="" />
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className="w-full" src={img3} alt="" />
+               
                 </SwiperSlide>
                
             </Swiper>

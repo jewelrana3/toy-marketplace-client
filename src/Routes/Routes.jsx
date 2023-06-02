@@ -9,7 +9,11 @@ import AllToy from "../components/AllToy/AllToy";
 import Blog from "../components/Blog/Blog";
 import Details from "../components/AllToy/Details";
 import Mytoy from "../components/Mytoy/Mytoy";
-// import DetailsRoute from "../Layout/DetailsRoute";
+import Login from "../pages/Login/Login";
+import SignUp from "../pages/Shared/SignUp/SignUp";
+import PrivateRouter from "./PrivateRouter";
+import UpdateToy from "../pages/UpdateToy/UpdateToy";
+
 
   const router = createBrowserRouter([
     {
@@ -33,31 +37,34 @@ import Mytoy from "../components/Mytoy/Mytoy";
         {
           path:'mytoy',
           element:<Mytoy></Mytoy>,
-          // loader:({params})=>fetch(`http://localhost:4000/allToy/${params.email}`)
+         
+        },
+        {
+          path:'updateToy/:id',
+          element:<UpdateToy></UpdateToy>,
+          loader:({params})=>fetch(`http://localhost:4000/alltoy/${params.id}`)
         },
         {
           path:'details/:id',
-          element:<Details></Details>,
+          element:<PrivateRouter><Details></Details></PrivateRouter>,
           loader:({params})=>fetch(`http://localhost:4000/allToy/${params.id}`)
         },
         {
           path:'blog',
           element:<Blog></Blog>
         },
+        {
+          path:'login',
+          element:<Login></Login>
+        },
+        {
+          path:'signup',
+          element:<SignUp></SignUp>
+        }
        
       ]
     },
-    // {
-    //   path:'details',
-    //   element:<DetailsRoute></DetailsRoute>,
-    //   children:[
-    //     {
-    //       path:'details/:id',
-    //       element:<Details></Details>,
-    //       loader:({params})=>fetch(`http://localhost:4000/addtoy/${params.id}`)
-    //     }
-    //   ]
-    // }
+   
   ]);
 
   export default router;
