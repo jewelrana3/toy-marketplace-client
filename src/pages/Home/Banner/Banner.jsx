@@ -15,8 +15,8 @@ const Banner = () => {
                         <h2 className=' text-5xl font-semibold'>Where Curiosity Thrives, Learning Flourishes - LearnPlay Haven</h2>
                        
                         <div>
-                            <button className="btn btn-active btn-accent mr-5">Expolore</button>
-                            <button className="btn btn-outline btn-info">Gallery</button>
+                            <button className="explore btn btn-active btn-accent mr-5">Expolore</button>
+                            <button className="explore btn btn-outline btn-info">Gallery</button>
                         </div>
                     </div>
                 </div>

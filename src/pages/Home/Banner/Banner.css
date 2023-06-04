@@ -1,6 +1,5 @@
-@media screen and (min-width:380px){
-   div button{
-   
-        display: flex;
+@media only screen and (min-width: 400px) {
+    .explore {
+    display: flex;
     }
-}
+  }
