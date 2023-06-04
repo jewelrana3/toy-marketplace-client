@@ -1,11 +1,26 @@
 
 
 const Blog = () => {
-    return (
-        <div className="pt-48">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo, tenetur voluptatum esse voluptates nihil cupiditate aut est eum quisquam mollitia placeat consectetur? Facere officia dolores minima nulla beatae dolorum modi adipisci hic. Ea aliquam provident sunt suscipit rem quod harum voluptatem. Alias assumenda dicta beatae officia aperiam necessitatibus esse molestiae distinctio aliquid dolorum nam ab a odio incidunt delectus ullam unde reiciendis fugiat eum, iure quas eligendi adipisci neque ipsa! Cumque sequi ratione dolores ad modi eligendi qui, iusto nobis eos a perferendis! Distinctio soluta ipsum facilis animi sequi amet? Fuga nobis, tenetur cumque eligendi eius excepturi odit neque dolores quam, a ab natus et illum, dolore odio culpa libero. Repellendus voluptatibus ad corrupti fugit voluptate eaque minima ut adipisci esse labore, illo, maiores blanditiis velit in sequi quis minus architecto inventore maxime sunt officia quia. Recusandae tempore architecto ratione quidem fugit obcaecati veniam placeat iusto modi molestias accusamus, porro a ex quas reprehenderit asperiores blanditiis, aliquid rerum voluptates sequi consequuntur culpa similique at? Architecto, ducimus dolores! Molestias possimus vel beatae quos dolores modi magni accusamus delectus numquam. Harum, eligendi sunt ipsam, doloribus sed et inventore minus molestiae quibusdam iusto, repudiandae non iste vero quis ratione. Fugiat ullam autem non error! Dolore facilis fugit temporibus laudantium perspiciatis! Pariatur commodi accusantium nostrum fugit provident deleniti eum quam voluptatem quia, repellendus id nesciunt voluptatum molestias temporibus quisquam inventore expedita? Optio id inventore minus a, alias dolore temporibus suscipit, facilis provident cupiditate voluptatum hic modi, rerum natus. Incidunt architecto libero magni eveniet a placeat, voluptatum dolores quo et, ipsam nobis sequi harum mollitia. Nisi aperiam dicta molestias corporis ducimus nobis, exercitationem non voluptate perspiciatis praesentium fuga voluptatibus officiis, excepturi natus nostrum! Nostrum doloremque ut harum qui eius veritatis, expedita placeat? Vitae dolores nulla rem consectetur debitis, consequuntur mollitia consequatur asperiores aliquam harum? Eos, reprehenderit magni fugiat facilis quam dicta perferendis sunt distinctio illum ducimus vero ex itaque quibusdam, dolorem ipsum et quasi accusantium alias, libero minima facere! Placeat autem officiis labore minima voluptatibus laboriosam magni repellendus? Vel voluptas debitis, magni animi deserunt recusandae laborum dignissimos, ipsum repudiandae neque perspiciatis, nemo saepe tempora laboriosam quo eos quam nostrum! Praesentium quas eum ad expedita quisquam impedit qui blanditiis magnam tempore beatae atque dicta doloribus tenetur iure natus ducimus, perferendis repellendus suscipit accusantium rerum cum architecto, odit fugit. In repudiandae dolores culpa rem ad, officiis ipsa laboriosam facere obcaecati voluptates laborum unde veniam, illum magnam nisi dicta hic voluptatibus ipsam? Voluptas eius sed perspiciatis, non laborum rerum libero veritatis obcaecati alias ullam optio reiciendis voluptatibus. Veniam debitis placeat consectetur doloribus illo adipisci sed laudantium omnis. Id necessitatibus ex odio temporibus ullam odit, porro at rem et! Est, dicta? Cupiditate quibusdam nisi, accusamus, in eaque aliquid natus corrupti quisquam autem dolores quos ducimus repellendus porro recusandae adipisci. Praesentium ut odit voluptate corporis eaque quia enim similique, rem dolor ex temporibus numquam cupiditate voluptates. Doloremque magni labore sunt fugiat quaerat vitae voluptatibus quis accusamus commodi aliquam. Commodi, ut vel repudiandae assumenda odit excepturi optio explicabo rem a?
-        </div>
-    );
+  return (
+    <div className="pt-48 mb-10">
+      <div>
+        <h2 className="text-3xl "> 1.What is an access token and refresh token? How do they work and where should we store them on the client-side?</h2>
+        <p>An access token is a credential that provides temporary access to protected resources. A refresh token is used to obtain a new access token without re-entering credentials. Access tokens are included in requests to access resources, while refresh tokens are used to request new access tokens. Its important to store tokens securely on the client-side.</p>
+      </div>
+      <div className="mt-4">
+        <h2 className="text-3xl">Compare SQL and NoSQL databases?</h2>
+        <p className="mt-3">SQL databases are based on a relational model, use structured schemas, ensure data integrity, and are suitable for applications with complex data structures. Examples include MySQL and PostgreSQL. NoSQL databases are designed for unstructured and non-relational data, offer flexibility and scalability, prioritize performance over strong consistency, and are suitable for applications handling large volumes of data. Examples include MongoDB and Redis.</p>
+      </div>
+      <div className="mt-4">
+        <h2 className="text-3xl">What is express js? What is Next JS?</h2>
+        <p className="mt-3">Express.js is a lightweight web application framework for Node.js, used for building APIs and web applications. Next.js is a React framework that provides server-side rendering, static site generation, and other advanced features for building React-based web applications.</p>
+      </div>
+      <div className="mt-4">
+        <h2 className="text-3xl">What is MongoDB aggregate and how does it work?</h2>
+        <p className="mt-3">MongoDBs aggregate is a feature for performing advanced data aggregation and processing. It uses a pipeline of stages to manipulate and aggregate data, including grouping, filtering, sorting, and computing results. It allows for flexible and powerful data transformations within the database.</p>
+      </div>
+    </div>
+  );
 };
 
 export default Blog;

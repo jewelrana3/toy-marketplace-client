@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../provider/AuthProvider";
 
 
 const AddBrainToy = () => {
+
+    const {user} = useContext(AuthContext)
     const handleAddCoffee = event => {
         event.preventDefault()
 
@@ -100,7 +104,7 @@ const AddBrainToy = () => {
                     <div className="form-control md:w-1/2">
 
                         <label className="input-group">
-                            <input type="text" name='email' placeholder="Seller Email"
+                            <input type="text" defaultValue={user?.email} name='email' placeholder="Seller Email"
                                 className="input input-bordered w-full" />
                         </label>
                     </div>

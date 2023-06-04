@@ -10,7 +10,8 @@ const Login = () => {
 
 
 
-    const {signIn} = useContext(AuthContext)
+    const {singIn} = useContext(AuthContext)
+    
     const location = useLocation()
     const navigate = useNavigate()
     const from = location.state?.from?.pathname || '/'
@@ -23,7 +24,7 @@ const Login = () => {
         const password = form.password.value;
         console.log(email,password);
 
-        signIn(email, password)
+        singIn(email, password)
         .then(result => {
             const user = result.user;
             console.log(user);
@@ -62,7 +63,7 @@ const Login = () => {
                                 <input className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
-                        <h2>Have an Already Account?
+                        <h2>Have an New Account?
                             <Link className='text-orange-600' to='/signup'>Sign Up</Link>
                             <SocialLogin></SocialLogin>
                         </h2>

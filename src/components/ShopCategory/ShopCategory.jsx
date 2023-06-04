@@ -12,7 +12,7 @@ const ShopCategory = ({item}) => {
                 <p className="text-left font-semibold">Price:${price}</p>
                 <p className="text-left font-semibold">Rating: {rating}</p>
                 <div className="card-actions justify-start">
-                   <Link to={`details/${_id}`}> <button className="btn btn-outline w-full">View Details</button></Link>
+                   <Link to={`details/${_id}`}> <button className="btn btn-wide btn-outline">View Details</button></Link>
                 </div>
             </div>
         </div>

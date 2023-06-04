@@ -50,13 +50,11 @@ const Navbar = () => {
             <div className="navbar-end">
                 {user ?
                     <>
-                        <div >
-                            <img className="w-16 rounded-full" src={'https://i.ibb.co/jzV5DKG/photo-1678390210450-22bd7664dc05.jpg'} />
-                        </div>
-                        <button onClick={handleLogout}>Log Out</button>
+                         <img title="BrainToy" style={{width:"40px"}} className="rounded-lg mr-4" src={'https://i.ibb.co/w0yKNh1/cl4-copyright.webp'} alt="" />
+                        <button onClick={handleLogout}>LogOut</button>
                     </>
                     :
-                    <>login</>
+                  <>    </>
                 }
             </div>
         </div >

@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
 const MytoyTab = ({toy,mytoy,setMytoy}) => {
-
+  
+  const [loading,setLoading] = useState(false)
     const { _id, price, category, quantity
         ,toyname ,email,picture } = toy;
 
@@ -25,12 +27,14 @@ const MytoyTab = ({toy,mytoy,setMytoy}) => {
                 })
                 .then(res=>res.json())
                 .then(data=>{
+                    setLoading(true)
                     if(data.deletedCount > 0){
                         Swal.fire(
                             'Deleted!',
                             'Your toy has been deleted.',
                             'success'
                           )
+                          setLoading(false)
                           const remaing = mytoy.filter(toy => toy._id !== _id)
                           setMytoy(remaing);
                     }
@@ -39,7 +43,9 @@ const MytoyTab = ({toy,mytoy,setMytoy}) => {
             }
           })
     }
-
+    if(loading){
+        return <p>loading</p>
+    }
   
     return (
         <tr>

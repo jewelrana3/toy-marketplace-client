@@ -1,0 +1,6 @@
+@media screen and (min-width:380px){
+   div button{
+   
+        display: flex;
+    }
+}

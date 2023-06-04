@@ -41,7 +41,7 @@ const UpdateToy = () => {
     }
     return (
         <div className="bg-[#F4F3F0] p-24 ">
-            <h2 className="text-3xl">How Spaer Coffee House</h2>
+            <h2 className="text-3xl"></h2>
             <form className="border-2 p-10" onSubmit={handleUpdate}>
                 {/* pictureurl  and price row */}
                 <div className=" p-3">

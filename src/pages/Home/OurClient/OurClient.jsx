@@ -1,5 +1,5 @@
 
-
+import './OurClient.css'
 const OurClient = () => {
     return (
         <div>
