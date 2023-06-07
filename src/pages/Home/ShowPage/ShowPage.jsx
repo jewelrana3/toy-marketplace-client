@@ -1,8 +1,9 @@
 import show from '../../../assets/show/show.webp'
+import './ShowPage.css'
 const ShowPage = () => {
     return (
-        <div className='mt-40 flex'>
-            <div className='w-1/2'>
+        <div className='showpage mt-40 flex'>
+            <div className='image w-1/2'>
                 <img src={show} alt="" />
             </div>
             <div className='mt-40 w-1/2'>

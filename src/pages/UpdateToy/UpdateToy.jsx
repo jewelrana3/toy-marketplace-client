@@ -18,7 +18,7 @@ const UpdateToy = () => {
         const updateValue = {price,quantity,description}
         console.log(updateValue)
 
-        fetch(`http://localhost:4000/allToy/${_id}`,{
+        fetch(`https://server-assignment-11-two.vercel.app/alltoy/${_id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'

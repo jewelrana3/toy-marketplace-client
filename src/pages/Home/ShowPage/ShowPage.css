@@ -1,0 +1,7 @@
+@media screen and(min-width:400px){
+    .showpage .image{
+        display: block;
+        margin: auto;
+        background-color: aqua;
+    }
+}

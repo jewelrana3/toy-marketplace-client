@@ -11,10 +11,10 @@ import ToyGallery from "../ToyGallery/ToyGallery";
 const Home = () => {
     return (
         <div>
-           <Banner></Banner>
-           <ShowPage></ShowPage>
-           <ToyGallery></ToyGallery>
-           <ShopPage></ShopPage>
+            <Banner></Banner>
+            <ShowPage></ShowPage>
+            <ToyGallery></ToyGallery>
+            <ShopPage></ShopPage>
             <OurClient></OurClient>
         </div>
     );

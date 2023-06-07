@@ -25,7 +25,7 @@ const AddBrainToy = () => {
         ,sellername,description }
         console.log(newItem)
 
-        fetch('http://localhost:4000/allToy',{
+        fetch('https://server-assignment-11-two.vercel.app/alltoy',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

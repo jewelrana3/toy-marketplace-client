@@ -22,7 +22,7 @@ const MytoyTab = ({toy,mytoy,setMytoy}) => {
           }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:4000/alltoy/${_id}`,{
+                fetch(`https://server-assignment-11-two.vercel.app/alltoy/${_id}`,{
                     method:'DELETE'
                 })
                 .then(res=>res.json())

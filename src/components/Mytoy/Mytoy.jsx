@@ -10,7 +10,7 @@ const Mytoy = () => {
     
     const { user } = useContext(AuthContext)
     console.log(user)
-    const uri = `http://localhost:4000/alltoy?email=${user?.email}`
+    const uri = `https://server-assignment-11-two.vercel.app/alltoy?email=${user?.email}`
     useEffect(() => {
         // if(!user?.email){
         //     return;

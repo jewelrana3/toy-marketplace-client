@@ -32,7 +32,7 @@ import UpdateToy from "../pages/UpdateToy/UpdateToy";
         {
           path:'alltoy',
           element:<AllToy></AllToy>,
-          loader:()=>fetch('http://localhost:4000/allToy')
+          loader:()=>fetch('https://server-assignment-11-two.vercel.app/allToy')
         },
         {
           path:'mytoy',
@@ -42,12 +42,12 @@ import UpdateToy from "../pages/UpdateToy/UpdateToy";
         {
           path:'updateToy/:id',
           element:<UpdateToy></UpdateToy>,
-          loader:({params})=>fetch(`http://localhost:4000/alltoy/${params.id}`)
+          loader:({params})=>fetch(`https://server-assignment-11-two.vercel.app/allToy/${params.id}`)
         },
         {
           path:'details/:id',
           element:<PrivateRouter><Details></Details></PrivateRouter>,
-          loader:({params})=>fetch(`http://localhost:4000/allToy/${params.id}`)
+          loader:({params})=>fetch(`https://server-assignment-11-two.vercel.app/allToy/${params.id}`)
         },
         {
           path:'blog',

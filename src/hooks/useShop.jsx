@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const useShop = () => {
     const [shop,setShop] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:4000/alltoy')
+        fetch('https://server-assignment-11-two.vercel.app/alltoy')
         .then(res=>res.json())
         .then(data=>{
             setShop(data)

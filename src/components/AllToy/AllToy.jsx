@@ -2,9 +2,11 @@
 import { useLoaderData } from 'react-router-dom';
 import AllToysRow from './AllToysRow';
 
+
 const AllToy = () => {
 
   const allToys   = useLoaderData();
+  console.log('fff',allToys)
     return (
         <div className='p-20'>
             <h2>length:{allToys.length}</h2>
@@ -25,7 +27,7 @@ const AllToy = () => {
                     
                        <tbody>
                        {
-                            allToys.map(allToy=><AllToysRow
+                            allToys.map(allToy => <AllToysRow 
                             key={allToy._id}
                             allToy={allToy}
                             ></AllToysRow>)
