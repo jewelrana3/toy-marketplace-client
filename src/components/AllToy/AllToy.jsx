@@ -1,14 +1,20 @@
 
 import { useLoaderData } from 'react-router-dom';
 import AllToysRow from './AllToysRow';
+import { Helmet } from 'react-helmet';
 
 
 const AllToy = () => {
 
-  const allToys   = useLoaderData();
-  console.log('fff',allToys)
+
+
+    const allToys = useLoaderData();
+    console.log('fff', allToys)
     return (
         <div className='p-20'>
+            <Helmet>
+                <title>All Toys</title>
+            </Helmet>
             <h2>length:{allToys.length}</h2>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
@@ -16,25 +22,25 @@ const AllToy = () => {
                     <thead>
                         <tr>
                             <th>
-                            NAME & CATEGORY
+                                NAME & CATEGORY
                             </th>
                             <th>PRICE & AVAILABLE QUANTITY</th>
                             <th>SELLER NAME</th>
                             <th>DETAILS</th>
-                           
+
                         </tr>
                     </thead>
-                    
-                       <tbody>
-                       {
-                            allToys.map(allToy => <AllToysRow 
-                            key={allToy._id}
-                            allToy={allToy}
+
+                    <tbody>
+                        {
+                            allToys.map(allToy => <AllToysRow
+                                key={allToy._id}
+                                allToy={allToy}
                             ></AllToysRow>)
-                       }
-                   
-                       </tbody>
-                  
+                        }
+
+                    </tbody>
+
                 </table>
             </div>
         </div>

@@ -12,13 +12,6 @@ const firebaseConfig = {
   messagingSenderId: import.meta.env.VITE_messagingSenderId,
   appId: import.meta.env.VITE_appId,
 
-
-// apiKey : "AIzaSyBdPrGiyxHK3MrpKjkPMik7KVypp8E0YxU",
-// authDomain : "assignment-11-client-15991.firebaseapp.com",
-// projectId : "assignment-11-client-15991",
-// storageBucket : "assignment-11-client-15991.appspot.com",
-// messagingSenderId : "516805797809",
-// appId : "1:516805797809:web:032a676260d10a95577f9",
 };
 
 // Initialize Firebase

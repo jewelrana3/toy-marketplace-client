@@ -13,12 +13,14 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/Shared/SignUp/SignUp";
 import PrivateRouter from "./PrivateRouter";
 import UpdateToy from "../pages/UpdateToy/UpdateToy";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 
   const router = createBrowserRouter([
     {
       path: "/",
       element:<Main></Main>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
             path:'/',
