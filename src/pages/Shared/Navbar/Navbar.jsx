@@ -48,9 +48,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {user ?
+                {user ?.email ?
                     <>
-                         <img title="BrainToy" style={{width:"40px"}} className="rounded-lg mr-4" src={'https://i.ibb.co/w0yKNh1/cl4-copyright.webp'} alt="" />
+                         <img title={user?.displayName} style={{width:"40px", borderRadius: '50%'}} className=" mr-4" src={user?.photoURL} alt="" />
                         <button onClick={handleLogout}>LogOut</button>
                     </>
                     :

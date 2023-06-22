@@ -2,7 +2,7 @@
 import './OurClient.css'
 const OurClient = () => {
     return (
-        <div>
+        <div data-aos="fade-up" data-aos-duration="3000">
             <div className="flex text-center">
                 <div className="w-1/2">
                     <h2 className="text-2xl">OUR CLIENTS</h2>

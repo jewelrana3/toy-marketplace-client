@@ -9,17 +9,18 @@ import ShowPage from "../ShowPage/ShowPage";
 import ToyGallery from "../ToyGallery/ToyGallery";
 
 
+
 const Home = () => {
     return (
         <div>
-              <Helmet>
-               
+            <Helmet>
+
                 <title>Home Page</title>
-                
+
             </Helmet>
             <Banner></Banner>
             <ShowPage></ShowPage>
-            <ToyGallery></ToyGallery>
+           <ToyGallery></ToyGallery>
             <ShopPage></ShopPage>
             <OurClient></OurClient>
         </div>
