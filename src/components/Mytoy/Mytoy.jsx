@@ -22,7 +22,7 @@ const Mytoy = () => {
             .then(res => res.json())
             .then(data => {
                 setMytoy(data)
-                console.log(data)
+         
             })
     }, [uri])
     if (loading) {

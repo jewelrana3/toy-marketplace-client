@@ -16,7 +16,7 @@ const UpdateToy = () => {
         const description = form.description.value;
 
         const updateValue = {price,quantity,description}
-        console.log(updateValue)
+     
 
         fetch(`https://server-assignment-11-two.vercel.app/alltoy/${_id}`,{
             method:'PUT',
@@ -27,7 +27,7 @@ const UpdateToy = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            console.log(data)
+           
             if(data.modifiedCount >0){
                 Swal.fire({
                     icon: 'success',

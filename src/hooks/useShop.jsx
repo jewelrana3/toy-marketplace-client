@@ -8,7 +8,7 @@ const useShop = () => {
         .then(res=>res.json())
         .then(data=>{
             setShop(data)
-            console.log(data)
+           
         })
     },[])
     return [shop]

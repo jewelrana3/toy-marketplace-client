@@ -11,10 +11,10 @@ const Banner = () => {
             <div id="slide1" className="carousel-item relative w-full">
                 <img src={img1} className="w-full rounded-lg" />
                 <div className="absolute rounded-lg flex items-center left-0 top-0 h-full bottom-0 bg-gradient-to-r from-[#151515] to-[rgba (21, 21, 21, 0)]">
-                    <div className='text-white space-y-7 pl-12 w-1/2'>
-                        <h2 className=' text-5xl font-semibold'>Where Curiosity Thrives, Learning Flourishes - LearnPlay Haven</h2>
+                    <div className='text-white space-y-7 pl-12 '>
+                        <h2 className='min-w-400  text-xl flex  lg:text-5xl text-start w-1/2 font-semibold'>Where Curiosity Thrives, Learning Flourishes - LearnPlay Haven</h2>
                        
-                        <div>
+                        <div className='min-w-400 flex'>
                             <button className="explore btn btn-active btn-accent mr-5">Expolore</button>
                             <button className="explore btn btn-outline btn-info">Gallery</button>
                         </div>

@@ -26,7 +26,7 @@ const AddBrainToy = () => {
             picture, price, toyname, category, rating, quantity, email
             , sellername, description
         }
-        console.log(newItem)
+ 
 
         fetch('https://server-assignment-11-two.vercel.app/alltoy', {
             method: 'POST',
@@ -37,7 +37,7 @@ const AddBrainToy = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+               
                 if (data.insertedId) {
                     Swal.fire({
                         icon: 'success',
