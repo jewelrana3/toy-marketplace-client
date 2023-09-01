@@ -3,18 +3,87 @@
 @tailwind utilities;
 
 .navItem a.active {
-    background-color: rgb(205, 91, 30);
-    
-  }
+  background-color: rgb(205, 91, 30);
 
-  /* .navItem a.active {
+}
+
+/* .navItem a.active {
     background-color: transparent;
   }
  */
- /* .small{
+/* .small{
   min-width: 400px;
  }
  .sideButton{
   min-width: 400px; */
- 
 
+/* contact menu */
+
+.contact-form form{
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+/* .contact-form form .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+
+
+form .submit:hover {
+  background-color: darkblue;
+
+  cursor: pointer;
+}
+
+
+/* meadia screen */
+@media (max-width:1380px) {
+  .contact-form form textarea{
+  width: 650px;
+  }
+}
+@media (max-width:900px) {
+  .contact-form form textarea{
+  width: 650px;
+  }
+}
+@media (max-width:640px) {
+  /* .contact-form form{
+    margin: 0 auto;
+    text-align: center;
+  } */
+ 
+  .input-header .ptag{
+    margin-top: 20px;
+  }
+  .contact-form form textarea{
+    width:100%;
+  }
+} 
+
+
+
+@media (max-width:550px) {
+ 
+  .input-header .ptag{
+    margin-top: 20px;
+  }
+  .contact-form form textarea{
+    width:100%;
+  }
+}
+@media (max-width:400px) {
+ 
+  .input-header .ptag{
+    margin-top: 20px;
+  }
+  .contact-form form textarea{
+    width:100%;
+  }
+}

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
 import logo from '../../../assets/banner/home.png'
 
@@ -17,17 +17,22 @@ const Navbar = () => {
             <li><NavLink to='/alltoy'>All Toys</NavLink></li>
             {
                 user ?
-                    <><li><NavLink to='/mytoy'>My Toys</NavLink></li>
+                    <>
+                        <li><NavLink to='/mytoy'>My Toys</NavLink></li>
                         <li><NavLink to='/addtoy'>Add A Toy</NavLink></li>
+                        <li><NavLink to='/shop'>Shop</NavLink></li>
+                        <li><NavLink to='/sales'>Sales</NavLink></li>
+                       
                     </>
                     : <li><NavLink to='/login'>Login</NavLink></li>}
 
             <li><NavLink to='/blog'>Blogs</NavLink></li>
+            <li><NavLink to='/contact'>Contact</NavLink></li>
 
         </div>
 
     return (
-        <div className="navbar fixed z-10  max-w-screen-xl bg-zinc-300">
+        <div className="navbar fixed z-10  bg-zinc-300">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,7 +43,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex ml-4">
-                    <img style={{width:'50px'}} src={logo} alt="" />
+                    <img style={{ width: '50px' }} src={logo} alt="" />
                     <a className="btn btn-ghost normal-case text-xl ">BrainYToyStroe</a>
                 </div>
             </div>
@@ -48,13 +53,13 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {user ?.email ?
+                {user?.email ?
                     <>
-                         <img title={user?.displayName} style={{width:"40px", borderRadius: '50%'}} className=" mr-4" src={user?.photoURL} alt="" />
-                        <button onClick={handleLogout}>LogOut</button>
+                        <img title={user?.displayName} style={{ width: "40px", borderRadius: '50%' }} className=" mr-4" src={user?.photoURL} alt="" />
+                        <button className="btn btn-primary" onClick={handleLogout}>LogOut</button>
                     </>
                     :
-                  <>    </>
+                    <>    </>
                 }
             </div>
         </div >

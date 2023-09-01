@@ -14,6 +14,9 @@ import SignUp from "../pages/Shared/SignUp/SignUp";
 import PrivateRouter from "./PrivateRouter";
 import UpdateToy from "../pages/UpdateToy/UpdateToy";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import Shop from "../pages/Shop/Shop";
+import Sales from "../pages/Sales/Sales";
+import Contact from "../pages/Contact/Contact";
 
 
   const router = createBrowserRouter([
@@ -36,6 +39,20 @@ import ErrorPage from "../ErrorPage/ErrorPage";
           element:<AllToy></AllToy>,
           loader:()=>fetch('https://server-assignment-11-two.vercel.app/allToy')
         },
+        {
+          path:'shop',
+          element:<Shop></Shop>
+        },
+        {
+          path:'sales',
+          element:<Sales></Sales>
+        },
+        
+        {
+          path:'contact',
+          element:<Contact></Contact>
+        },
+        
         {
           path:'mytoy',
           element:<Mytoy></Mytoy>,

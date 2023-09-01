@@ -23,8 +23,8 @@ const ShopPage = () => {
                     <Tab>Engenieer Toys</Tab>
                 </TabList>
 
-                <TabPanel>
-                    <ShopTab items={math}></ShopTab>
+                <TabPanel >
+                    <ShopTab className="category" items={math}></ShopTab>
                 </TabPanel>
                 <TabPanel>
                     <ShopTab items={science}></ShopTab>
