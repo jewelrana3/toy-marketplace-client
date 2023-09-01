@@ -6,8 +6,11 @@
   background-color: rgb(205, 91, 30);
 
 }
+.navItem a {
+color: white;
+}
 
-/* .navItem a.active {
+/* .navItem a {
     background-color: transparent;
   }
  */
@@ -27,23 +30,15 @@
 
 
 
-/* .contact-form form .input-box {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-} */
-
-
 form .submit:hover {
   background-color: darkblue;
-
   cursor: pointer;
 }
 
 
 /* meadia screen */
 @media (max-width:1380px) {
+
   .contact-form form textarea{
   width: 650px;
   }
@@ -54,11 +49,6 @@ form .submit:hover {
   }
 }
 @media (max-width:640px) {
-  /* .contact-form form{
-    margin: 0 auto;
-    text-align: center;
-  } */
- 
   .input-header .ptag{
     margin-top: 20px;
   }

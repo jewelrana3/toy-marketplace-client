@@ -55,17 +55,17 @@ const AddBrainToy = () => {
                 <title>Add Toys</title>
             </Helmet>
             <div className="bg-[#F4F3F0] p-24 ">
-                <h2 className="text-3xl">How Spaer Coffee House</h2>
+                <h2 className="text-3xl text-center mb-4">How Spaer Coffee House</h2>
                 <form className="border-2 p-10" onSubmit={handleAddCoffee}>
                     {/* pictureurl  and price row */}
-                    <div className="flex p-3">
-                        <div className="form-control md:w-1/2">
+                    <div className="sm:flex p-3">
+                        <div className="form-control mt-3 md:w-1/2">
                             <label className="input-group">
                                 <input type="text" name='picture' placeholder="Picture Url of the toy"
                                     className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control mt-3 md:w-1/2 sm:ml-4">
                             <label className="input-group">
                                 <input type="text" name='price' placeholder="Price"
                                     className="input input-bordered w-full" />
@@ -73,16 +73,15 @@ const AddBrainToy = () => {
                         </div>
                     </div>
                     {/* toy name and rating row */}
-                    <div className="flex p-3">
-                        <div className="form-control md:w-1/2">
+                    <div className="sm:flex p-3">
+                        <div className="form-control mt-3 md:w-1/2">
 
                             <label className="input-group">
                                 <input type="text" name='toyname' placeholder="Toy Name"
                                     className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
-
+                        <div className="form-control mt-3 md:w-1/2 sm:ml-4">
                             <label className="input-group">
                                 <input type="text" name='rating' placeholder="Rating"
                                     className="input input-bordered w-full" />
@@ -90,15 +89,14 @@ const AddBrainToy = () => {
                         </div>
                     </div>
                     {/* seller name and avilabile quantity row */}
-                    <div className="flex p-3">
-                        <div className="form-control md:w-1/2">
-
+                    <div className="sm:flex mt-3 p-3">
+                        <div className="form-control mt-3 md:w-1/2">
                             <label className="input-group">
                                 <input type="text" name='sellername' placeholder="Seller Name"
                                     className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control mt-3 md:w-1/2 sm:ml-4">
 
                             <label className="input-group">
                                 <input type="text" name='quantity' placeholder="Avilable Quantity"
@@ -107,15 +105,14 @@ const AddBrainToy = () => {
                         </div>
                     </div>
                     {/*seller email and select catecogy  */}
-                    <div className="flex p-3">
-                        <div className="form-control md:w-1/2">
-
+                    <div className="sm:flex p-3">
+                        <div className="form-control mt-3 md:w-1/2">
                             <label className="input-group">
                                 <input type="text" defaultValue={user?.email} name='email' placeholder="Seller Email"
                                     className="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div className="form-control md:w-1/2 ml-4">
+                        <div className="form-control mt-2 md:w-1/2 sm:ml-4">
 
                             <label className="input-group">
                                 <input type="text" name='category' placeholder="Select Category"
@@ -124,8 +121,7 @@ const AddBrainToy = () => {
                         </div>
                     </div>
                     {/* description ber */}
-                    <div className="form-control w-full">
-
+                    <div className="form-control">
                         <label className="input-group">
                             <input type="text" name='description' placeholder="Details Description"
                                 className="input input-bordered w-full" />

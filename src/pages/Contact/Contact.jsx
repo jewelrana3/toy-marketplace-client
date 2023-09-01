@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <>
             <h2 className="bg-black pt-36 pb-6 text-3xl text-white text-center">Contact </h2>
-            <div className="contact-form bg-black pb-8  flex items-center justify-center">
+            <div className="contact-form bg-black pb-24  flex items-center justify-center">
                 <form className="border p-8" onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
 
                    

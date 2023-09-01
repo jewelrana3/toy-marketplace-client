@@ -10,7 +10,7 @@ const Blog = () => {
       <Helmet>
         <title>Blogs</title>
       </Helmet>
-      <div className="pt-48 mb-10">
+      <div className="pt-48 mb-10 px-4">
 
         <div>
           <h2 className="text-3xl "> 1.What is an access token and refresh token? How do they work and where should we store them on the client-side?</h2>
@@ -28,7 +28,8 @@ const Blog = () => {
           <h2 className="text-3xl">What is MongoDB aggregate and how does it work?</h2>
           <p className="mt-3">MongoDBs aggregate is a feature for performing advanced data aggregation and processing. It uses a pipeline of stages to manipulate and aggregate data, including grouping, filtering, sorting, and computing results. It allows for flexible and powerful data transformations within the database.</p>
         </div>
-      </div>
+      </div> 
+      
     </>
   );
 };

@@ -6,7 +6,6 @@ const AllToysRow = ({ allToy }) => {
         , sellername,toyname  } = allToy;
     return (
        
-           
                 <tr>
                     <td>
                         <div className="flex items-center space-x-3">

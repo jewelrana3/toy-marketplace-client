@@ -9,7 +9,7 @@ const AllToy = () => {
 
 
     const allToys = useLoaderData();
-    console.log('fff', allToys)
+    
     return (
         <div className='p-20'>
             <Helmet>
@@ -17,7 +17,7 @@ const AllToy = () => {
             </Helmet>
             <h2>length:{allToys.length}</h2>
             <div className="overflow-x-auto w-full">
-                <table className="table w-full">
+                <table className="table w-full z-0">
                     {/* head */}
                     <thead>
                         <tr>

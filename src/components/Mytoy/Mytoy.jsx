@@ -38,7 +38,7 @@ const Mytoy = () => {
             <div className="p-20">
                 <h2>Lenght:{mytoy.length}</h2>
                 <div className="overflow-x-auto w-full">
-                    <table className="table w-full">
+                    <table className="table w-full z-0">
 
                         <thead>
                             <tr>
