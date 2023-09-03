@@ -14,7 +14,7 @@ const Contact = () => {
             <Helmet>
                 <title>Blogs</title>
             </Helmet>
-            <h2 className="bg-black pt-36 pb-6 text-3xl text-white text-center">Contact </h2>
+            <h2 className="bg-black font-thin  pb-6 text-4xl pt-20 text-white text-center">Contact Me</h2>
             <div className="contact-form bg-black pb-24  flex items-center justify-center">
                 <form className="border p-8" onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
 

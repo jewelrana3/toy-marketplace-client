@@ -7,6 +7,9 @@ import ShopPage from "../ShopPage/ShopPage";
 // import ShopPage from "../ShopPage/ShopPage";
 import ShowPage from "../ShowPage/ShowPage";
 import ToyGallery from "../ToyGallery/ToyGallery";
+import Shop from "../../Shop/Shop";
+import Sales from "../../Sales/Sales";
+import Contact from "../../Contact/Contact";
 
 
 
@@ -18,9 +21,12 @@ const Home = () => {
             </Helmet>
             <Banner></Banner>
             <ShowPage></ShowPage>
-           <ToyGallery></ToyGallery>
+            <ToyGallery></ToyGallery>
+            <Shop></Shop>
+            <Sales></Sales>
             <ShopPage></ShopPage>
             <OurClient></OurClient>
+            <Contact></Contact>
         </div>
     );
 };

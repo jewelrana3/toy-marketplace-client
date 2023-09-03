@@ -7,7 +7,9 @@ const Shop = () => {
             <Helmet>
                 <title>All Toys</title>
             </Helmet>
-            <div className="px-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-40 pb-9">
+            <h2 className='text-center text-7xl pt-20 text-emerald-400 font-thin'>Shop Store</h2>
+            <p className='mt-5 text-center px-6 text-slate-400'>Through the Text-to-Buy functionality, customers can confirm these details and place their order without ever having to leave their messages. <br /> You simply send your text and your customer will text you back to begin checkout.</p>
+            <div className="px-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-20 pb-9">
                 <div className="card glass mt-6">
                     <figure><img src="https://i.ibb.co/QjVVM2f/tomas-petz-O8eo2-BC1-SOI-unsplash.jpg" alt="car!" /></figure>
                     <div className="card-body">
