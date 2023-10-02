@@ -2,7 +2,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from '../../provider/AuthProvider';
 import MytoyTab from "./MytoyTab";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Mytoy = () => {
 
@@ -11,7 +11,7 @@ const Mytoy = () => {
     const [loading, setLoading] = useState(false)
 
     const { user } = useContext(AuthContext)
-    console.log(user)
+   
     const uri = `https://server-assignment-11-two.vercel.app/alltoy?email=${user?.email}`
     useEffect(() => {
         // if(!user?.email){
@@ -33,7 +33,7 @@ const Mytoy = () => {
 
         <>
             <Helmet>
-                <title>My Toys </title>
+                <title>My Toys</title>
             </Helmet>
             <div className="p-20">
                 <h2>Lenght:{mytoy.length}</h2>

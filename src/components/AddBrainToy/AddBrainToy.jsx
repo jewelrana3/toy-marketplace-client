@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../provider/AuthProvider";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 
 const AddBrainToy = () => {
@@ -52,7 +52,7 @@ const AddBrainToy = () => {
     return (
         <>
             <Helmet>
-                <title>Add Toys</title>
+                <title>Toy Market - Add Toys</title>
             </Helmet>
             <div className="bg-[#F4F3F0] p-24 ">
                 <h2 className="text-3xl text-center mb-4">How Spaer Coffee House</h2>

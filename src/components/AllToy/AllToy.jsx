@@ -1,7 +1,8 @@
 
 import { useLoaderData } from 'react-router-dom';
 import AllToysRow from './AllToysRow';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+
 
 
 const AllToy = () => {

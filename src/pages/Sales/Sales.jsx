@@ -1,13 +1,11 @@
-import { Helmet } from "react-helmet-async";
+
 
 
 const Sales = () => {
     return (
         <>
-            <Helmet>
-                <title>Blogs</title>
-            </Helmet>
-            <h2 className="text-7xl text-center text-cyan-400 pt-20 font-thin">Sales Contents</h2>
+          
+            <h2 className="text-4xl text-center text-cyan-400 pt-20 font-thin">Sales Contents</h2>
             <p className="text-center text-slate-400 mt-6">Your sales message is your pitch, where you make your case to potential customers and convince them that they should buy your product. <br /> You may have different sales messages depending on a variety of factors, including the product, <br /> audience, season, or any time-sensitive promotions you may have.</p>
             <div className="px-2 mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                 <div className="card  glass ">

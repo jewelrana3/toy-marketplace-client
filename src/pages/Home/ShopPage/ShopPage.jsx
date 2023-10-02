@@ -13,7 +13,7 @@ const ShopPage = () => {
     const engineer = shop.filter(item => item.category === 'Engineer')
     return (
         <div className="text-center">
-            <h2 className="text-5xl ">Shop By Category</h2>
+            <h2 className="text-4xl ">Shop By Category</h2>
             <p className="mt-5 mb-10">Welcome to our Educational Toy Shop: Explore and Learn!!</p>
             <Tabs>
                 <TabList >
