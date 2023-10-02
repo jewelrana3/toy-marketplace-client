@@ -33,7 +33,7 @@ const Mytoy = () => {
 
         <>
             <Helmet>
-                <title>My Toys</title>
+                <title>Toy Market - My Toys</title>
             </Helmet>
             <div className="p-20">
                 <h2>Lenght:{mytoy.length}</h2>

@@ -7,7 +7,7 @@ const Blog = () => {
 
     <>
       <Helmet>
-        <title>Blogs</title>
+        <title>Toy Market - Blogs</title>
       </Helmet>
       <div className="pt-48 mb-10 px-4">
 

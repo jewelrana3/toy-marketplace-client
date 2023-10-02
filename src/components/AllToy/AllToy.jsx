@@ -14,7 +14,7 @@ const AllToy = () => {
     return (
         <div className='p-20'>
             <Helmet>
-                <title>All Toys</title>
+                <title>Toy Market - All Toys</title>
             </Helmet>
             <h2>length:{allToys.length}</h2>
             <div className="overflow-x-auto w-full">

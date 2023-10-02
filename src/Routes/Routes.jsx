@@ -30,54 +30,54 @@ import Contact from "../pages/Contact/Contact";
             element:<Home></Home>
         },
         {
-          path:'addtoy',
+          path:'/addtoy',
           element:<AddBrainToy></AddBrainToy>
         }
         ,
         {
-          path:'alltoy',
+          path:'/alltoy',
           element:<AllToy></AllToy>,
           loader:()=>fetch('https://server-assignment-11-two.vercel.app/allToy')
         },
         {
-          path:'shop',
+          path:'/shop',
           element:<Shop></Shop>
         },
         {
-          path:'sales',
+          path:'/sales',
           element:<Sales></Sales>
         },
         
         {
-          path:'contact',
+          path:'/contact',
           element:<Contact></Contact>
         },
         
         {
-          path:'mytoy',
+          path:'/mytoy',
           element:<Mytoy></Mytoy>,
          
         },
         {
-          path:'updateToy/:id',
+          path:'/updateToy/:id',
           element:<UpdateToy></UpdateToy>,
           loader:({params})=>fetch(`https://server-assignment-11-two.vercel.app/allToy/${params.id}`)
         },
         {
-          path:'details/:id',
+          path:'/details/:id',
           element:<PrivateRouter><Details></Details></PrivateRouter>,
           loader:({params})=>fetch(`https://server-assignment-11-two.vercel.app/allToy/${params.id}`)
         },
         {
-          path:'blog',
+          path:'/blog',
           element:<Blog></Blog>
         },
         {
-          path:'login',
+          path:'/login',
           element:<Login></Login>
         },
         {
-          path:'signup',
+          path:'/signup',
           element:<SignUp></SignUp>
         }
        

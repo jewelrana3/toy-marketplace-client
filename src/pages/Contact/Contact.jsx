@@ -1,19 +1,24 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Helmet } from "react-helmet-async";
+
 // import Header from "./Header";
 
 
 const Contact = () => {
+
+   
 
     const { register, handleSubmit } = useForm();
     const [data, setData] = useState("");
 
     return (
         <>
-            <Helmet>
-                <title>Contact</title>
-            </Helmet>
+            {
+                <Helmet>
+                    <title>Toy Market - Contact</title>
+                </Helmet>
+                }
             <h2 className="bg-black font-thin  pb-6 text-4xl pt-20 text-white text-center">Contact Me</h2>
             <div className="contact-form bg-black pb-24  flex items-center justify-center">
                 <form className="border p-8" onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>

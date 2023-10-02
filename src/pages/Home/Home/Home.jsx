@@ -8,17 +8,23 @@ import ShopPage from "../ShopPage/ShopPage";
 import ShowPage from "../ShowPage/ShowPage";
 import ToyGallery from "../ToyGallery/ToyGallery";
 import Shop from "../../Shop/Shop";
-// import Contact from "../../Contact/Contact";
+import Contact from "../../Contact/Contact";
 import Sales from "../../Sales/Sales";
+import { useLocation } from "react-router-dom";
 
 
 
 const Home = () => {
+    const location = useLocation()
+    const home = location.pathname.includes('/')
+
     return (
         <>
-            <Helmet>
-                <title>Toy Market - Home Page</title>
-            </Helmet>
+            {
+              <Helmet>
+                    <title>Toy Market - Home page</title>
+                </Helmet>
+            }
             <div>
 
                 <Banner></Banner>
@@ -28,7 +34,7 @@ const Home = () => {
                 <Sales></Sales>
                 <ShopPage></ShopPage>
                 <OurClient></OurClient>
-                {/* <Contact></Contact> */}
+                {home || <Contact></Contact>}
             </div>
         </>
     );
